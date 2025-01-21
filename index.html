@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Hunt</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <h1>Job<span class="span1">Hunt</span></h1>
+    </div>
+    <div class="head1">
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="#job-listings">Jobs</a>
+        </li>
+        <li>
+          <a href="#job-listings">Browse</a>
+        </li>
+      </ul>
+    </div>
+    <div class="head2">
+      <a href="Login.html"><button class="btn1">Login</button></a>
+      <a href="Signup.html"><button class="btn2">Signup</button></a>
+    </div>
+  </div>
+
+  <div class="text">
+    <span class="span2">No. 1 Job Hunt Website</span>
+    <h1 class="text-header">
+      Search, Apply & <br />
+      Get Your <span style="color: rgb(97, 40, 151)">Dream Jobs</span>
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+      aspernatur temporibus nihil tempora dolor!
+    </p>
+  </div>
+  <div class="Search-bar">
+    <input type="text" name="search" id="search" placeholder="Find your dream jobs" />
+    <button><i class="fa fa-search">🔍</i></button>
+  </div>
+
+  <div class="carousel-container">
+    <!-- Left Scroll Button -->
+    <button class="scroll-button left" onclick="scrollLeft()">&#8249;</button>
+  
+    <!-- Scrollable Buttons Container -->
+    <span class="carousel-box">
+      <button class="role-button">Frontend Developer</button>
+      <button class="role-button">Backend Developer</button>
+      <button class="role-button">Data Science</button>
+      <button class="role-button">Graphic Designer</button>
+      <button class="role-button">FullStack Developer</button>
+      <button class="role-button">Devops Engineer</button>
+      <button class="role-button">Product Manager</button>
+    </span>
+  
+    <!-- Right Scroll Button -->
+    <button class="scroll-button right" onclick="scrollRight()">&#8250;</button>
+  </div>
+  
+  
+
+  <div class="job-h">
+    <h1><span style="color: rgb(100, 34, 161);">Latest & Top</span> Job Openings</h1>
+  </div>
+  <!--Job cards-->
+  <section id="job-listings" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Frontend Developer</h5>
+              <p class="card-text">Build modern user interfaces using technologies like HTML, CSS, and JavaScript.</p>
+              <p><strong>Experience:</strong> 2-4 years</p>
+              <p><strong>Salary:</strong> ₹5,00,000 - ₹8,00,000 per year</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Backend Developer</h5>
+              <p class="card-text">Design scalable server-side logic and APIs with robust frameworks.</p>
+              <p><strong>Experience:</strong> 3-5 years</p>
+              <p><strong>Salary:</strong> ₹6,00,000 - ₹10,00,000 per year</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Data Scientist</h5>
+              <p class="card-text">Analyze complex datasets to derive meaningful insights and predictions.</p>
+              <p><strong>Experience:</strong> 4-6 years</p>
+              <p><strong>Salary:</strong> ₹8,00,000 - ₹15,00,000 per year</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 4-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Full Stack Developer</h5>
+              <p class="card-text">Combine frontend and backend development for seamless web applications.</p>
+              <p><strong>Experience:</strong> 2-4 years</p>
+              <p><strong>Salary:</strong> ₹5,00,000 - ₹12,00,000 per year</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 5-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">UI/UX Designer</h5>
+              <p class="card-text">Design seamless user experiences with a focus on aesthetics and functionality.</p>
+              <p><strong>Experience:</strong> 1-3 years</p>
+              <p><strong>Salary:</strong> ₹4,00,000 - ₹7,00,000 per year</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 6-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">DevOps Engineer</h5>
+              <p class="card-text">Automate workflows and ensure efficient software delivery pipelines.</p>
+              <p><strong>Experience:</strong> 3-6 years</p>
+              <p><strong>Salary:</strong> ₹7,00,000 - ₹12,00,000 per year</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!--card 7-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cloud Architect</h5>
+              <p class="card-text">Design and manage cloud computing solutions for businesses.</p>
+              <p><strong>Experience:</strong> 5-8 years</p>
+              <p><strong>Salary:</strong> ₹10,00,000 - ₹20,00,000 per year</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 8-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cybersecurity Analyst</h5>
+              <p class="card-text">Protect systems and networks from cyber threats and vulnerabilities.</p>
+              <p><strong>Experience:</strong> 3-5 years</p>
+              <p><strong>Salary:</strong> ₹6,00,000 - ₹12,00,000 per year</p> 
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 9-->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Product Manager</h5>
+              <p class="card-text">Lead cross-functional teams to define, build, and deliver innovative products.</p>
+              <p><strong>Experience:</strong> 5-8 years</p>
+              <p><strong>Salary:</strong> ₹12,00,000 - ₹22,00,000 per year</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 JobHunt. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png" alt="Facebook" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="Twitter" />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384014.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-mQ93VFBO3+8dQ6yC54jD5IxMAQqjFZ5sYYorRBVVdbLUELKxk9Gh9clpMJ9Bdh3y" crossorigin="anonymous"></script>
+
+        <!--Scroll buttons script-->
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+        const scrollContainer = document.querySelector(".carousel-box");
+
+        // Scroll left function
+        document.querySelector(".scroll-button.left").addEventListener("click", () => {
+          scrollContainer.scrollLeft -= 200;
+        });
+
+        // Scroll right function
+        document.querySelector(".scroll-button.right").addEventListener("click", () => {
+          scrollContainer.scrollLeft += 200;
+        });
+      });
+    </script>
+</body>
+
+</html>
